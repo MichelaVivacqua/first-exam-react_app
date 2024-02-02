@@ -15,11 +15,11 @@ function App() {
       <main style={{ backgroundColor: "#221f1f" }}>
         <TVShows />
         <h4 className="text-white ms-4">Trending Now</h4>
-        <Content otherFilm="007" />
+        <Content otherFilm="Spongebob" />
         <h4 className="text-white ms-4 mt-4">Watch it Again</h4>
-        <Content otherFilm="Harry" />
+        <Content otherFilm="Winnie" />
         <h4 className="text-white ms-4 mt-4">New Releases</h4>
-        <Content otherFilm="Star" />
+        <Content otherFilm="Winx" />
       </main>
       <MyFooter />
     </>

@@ -2,7 +2,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 
 const MyFooter = () => {
   return (
-    <footer className="bg-dark">
+    <footer data-bs-theme="dark" style={{ backgroundColor: "#221f1f" }}>
       <Container>
         <Row className="justify-content-center">
           <Col xs={6}>
