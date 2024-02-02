@@ -6,11 +6,12 @@ class Content extends Component {
   };
 
   componentDidMount() {
-    this.fetchFilms();
+    const { otherFilm } = this.props;
+    this.fetchFilms(otherFilm);
   }
 
-  fetchFilms = () => {
-    fetch("http://www.omdbapi.com/?apikey=8d3cdf1b&s=007")
+  fetchFilms = (otherFilm) => {
+    fetch("http://www.omdbapi.com/?apikey=8d3cdf1b&s=" + otherFilm)
       .then((response) => {
         if (response.ok) {
           return response.json();
@@ -19,7 +20,9 @@ class Content extends Component {
         }
       })
       .then((data) => {
-        this.setState({ arrayOfFilms: data.Search || [] });
+        this.setState({
+          arrayOfFilms: data.Search,
+        });
       })
       .catch((err) => {
         console.log(err);
