@@ -5,6 +5,7 @@ import MyNavbar from "./components/MyNavbar";
 import MyFooter from "./components/MyFooter";
 import TVShows from "./components/TvShows";
 import Content from "./components/Content";
+import EditProfile from "./EditProfile";
 
 function App() {
   return (
@@ -25,5 +26,19 @@ function App() {
     </>
   );
 }
+
+// per vedere la pagina edit-profile,
+// occorre commentare dalla riga 10 alla 28
+// e decommentare dalla riga alla riga 34 alla riga 42
+
+// function App() {
+//   return (
+//     <>
+//       <main style={{ backgroundColor: "#221f1f" }}>
+//         <EditProfile />
+//       </main>
+//     </>
+//   );
+// }
 
 export default App;

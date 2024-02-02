@@ -5,8 +5,6 @@ import { Nav } from "react-bootstrap";
 const MyNavbar = (props) => (
   <Navbar
     expand="lg"
-    // bg="dark"
-    // variant="dark"
     data-bs-theme="dark"
     style={{ backgroundColor: "#221f1f" }}
   >
