@@ -6,6 +6,15 @@ import MyFooter from "./components/MyFooter";
 import TVShows from "./components/TvShows";
 import Content from "./components/Content";
 import EditProfile from "./EditProfile";
+import Setting from "./components/Setting";
+
+// per vedere la pagina edit-profile,
+// occorre commentare dalla riga 19 alla 37
+// e decommentare dalla riga alla riga 39 alla riga 47
+
+// per vedere la pagina settings,
+// commentare dalla riga 19 alla 47
+// e decommentare dalla riga 49 alla riga 60
 
 function App() {
   return (
@@ -27,15 +36,24 @@ function App() {
   );
 }
 
-// per vedere la pagina edit-profile,
-// occorre commentare dalla riga 10 alla 28
-// e decommentare dalla riga alla riga 34 alla riga 42
-
 // function App() {
 //   return (
 //     <>
 //       <main style={{ backgroundColor: "#221f1f" }}>
 //         <EditProfile />
+//       </main>
+//     </>
+//   );
+// }
+
+// function App() {
+//   return (
+//     <>
+//       <header>
+//         <MyNavbar />
+//       </header>
+//       <main>
+//         <Setting />
 //       </main>
 //     </>
 //   );
