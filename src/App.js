@@ -12,10 +12,13 @@ function App() {
       <header>
         <MyNavbar />
       </header>
-      <main>
+      <main style={{ backgroundColor: "#221f1f" }}>
         <TVShows />
-        <h4>Trending Now</h4>
-        {/* <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4"> */}
+        <h4 className="text-white ms-4">Trending Now</h4>
+        <Content />
+        <h4 className="text-white ms-4 mt-4">Watch it Again</h4>
+        <Content />
+        <h4 className="text-white ms-4 mt-4">New Releases</h4>
         <Content />
       </main>
       <MyFooter />

@@ -29,7 +29,7 @@ class Content extends Component {
     const { arrayOfFilms } = this.state;
 
     return (
-      <div className="d-flex flex-nowrap overflow-auto">
+      <div className=" row d-flex flex-nowrap overflow-auto">
         {arrayOfFilms.map((film) => (
           <div
             key={film.imdbID}
